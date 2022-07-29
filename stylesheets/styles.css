@@ -1,0 +1,156 @@
+/*Global Variables*/
+* {
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    padding: 0;
+    margin: 0;
+    background: #faf3ed!important;
+    }
+    
+    /*Questions Styling*/
+    .question {
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    }
+    
+    .user-img {
+    width: 50px;
+    border-radius: 50px;
+    }
+    
+    .user, .content {
+        margin-left: 8%;
+    }
+    
+    /*Vote stylings*/
+    
+    .vote-tgl {
+    float: left;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .vote-tgl span {
+    display: block;
+    }
+    
+    .vote-icon:hover {
+    background-color: white;
+    border-radius: 10px;
+    }
+    
+    .up {
+    background: url('../assets/Vote Up Outline.svg');
+    width: 25px;
+    height: 25px;
+    }
+    
+    .up:hover {
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    
+    .down {
+    background: url('../assets/Vote Down Outline.svg');
+    width: 25px;
+    height: 25px;
+    }
+    
+    .down:hover {
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+    
+    .up.active {
+    background: url('../assets/Vote Up Fill.svg');
+    width: 25px;
+    height: 25px;
+    }
+    
+    .down.active {
+    background: url('../assets/Vote Down Fill.svg');
+    width: 25px;
+    height: 25px;
+    }
+    
+    /*Voting Options*/
+    .reply {
+    background: #f1f1f1;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    }
+    
+    .like {
+    float: right;
+    }
+    
+    /*temp*/
+    .user span {
+    margin-left: 20px; 
+    }
+    
+    .user-name {
+    font-weight: 700;
+    color: #227146;
+    }
+    
+    .response {
+    margin: 10px;
+    font-weight: 700;
+    color: #227146;
+    }
+
+    .response:hover {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    /*share button*/
+    .actions {
+        float: right;   
+    }
+    
+    .actions:hover{
+        cursor: pointer;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+  
+    /*Bootstrap mods*/
+    
+    @media (min-width: 1000px) {
+    .container{
+        max-width: 800px!important;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .vote-tgl {
+            display: flex;
+            flex-direction: row;
+           
+        }
+        .vote-tgl span{
+            margin-left: 5px;
+        }
+        .tile-info {
+            clear: left;
+        }
+        .user, .content {
+            margin-left: 0%;
+        }
+    }
