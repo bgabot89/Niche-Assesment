@@ -59,7 +59,7 @@ const target = 4;
             for (let i=target; i< Resp[0].children.length; i++) {
                 Resp[0].children[i].style.display = "block";        
             }
-            Resbutn2.style.visibility = "hidden"; 
+            Resbutn.style.visibility = "hidden"; 
         })
     }
 
