@@ -45,6 +45,7 @@ for (let i=0; i < DownSelector.length; i++) {
 //1st Card
 const Resp = document.querySelectorAll('.question .replies');
 const Resbutn = document.querySelector('#question-1 .response-btn');
+const Resbutn2 = document.querySelector('#question-2 .response-btn');
 const target = 4;
 
     if (Resp[0].children.length <= target) {
@@ -63,7 +64,6 @@ const target = 4;
     }
 
 //Second Card
-const Resbutn2 = document.querySelector('#question-2 .response-btn');
 
     if (Resp[1].children.length <= target ) {
         Resbutn2.style.visibility = "hidden"; //hides view responses btn
